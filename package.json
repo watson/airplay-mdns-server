@@ -1,0 +1,35 @@
+{
+  "name": "airplay-mdns-server",
+  "version": "0.0.0",
+  "description": "An AirPlay mDNS broadcast server",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/airplay-mdns-server.git"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "getmac": "^1.0.7",
+    "mdns": "^2.2.9"
+  },
+  "devDependencies": {
+    "standard": "^5.2.1"
+  },
+  "keywords": [
+    "airplay",
+    "mdns",
+    "broadcast",
+    "server",
+    "zeroconf",
+    "bonjour"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/airplay-mdns-server/issues"
+  },
+  "homepage": "https://github.com/watson/airplay-mdns-server#readme"
+}
