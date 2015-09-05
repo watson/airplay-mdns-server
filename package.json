@@ -1,6 +1,6 @@
 {
   "name": "airplay-mdns-server",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An AirPlay mDNS broadcast server",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/watson/airplay-mdns-server/issues"
   },
-  "homepage": "https://github.com/watson/airplay-mdns-server#readme"
+  "homepage": "https://github.com/watson/airplay-mdns-server#readme",
+  "coordinates": [
+    55.6928897,
+    12.547805
+  ]
 }
