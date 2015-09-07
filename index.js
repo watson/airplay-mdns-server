@@ -60,7 +60,7 @@ function getMac (cb) {
 }
 
 function generateFeatureMask (base10) {
-  var hex = base10.toString(16).toUpperCase()
+  var hex = base10.toString(16).toUpperCase() // TODO: shouldn't it be lowercase?
   var rest = hex.length % 8
   var groups = hex.slice(rest).match(/.{8}/g) || []
   if (rest) groups.unshift(hex.slice(0, rest))
