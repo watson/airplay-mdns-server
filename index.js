@@ -25,7 +25,7 @@ module.exports = function (opts, cb) {
 
   function broadcast (mac) {
     var txt = opts.txt || generateTxt(mac)
-    debug('Advertising AirPlay server on port %d', opts.port, opts.name)
+    debug('Advertising AirPlay server on port %d', opts.port, opts.name, txt)
 
     mdns
       .createAdvertisement(mdns.tcp('airplay'), opts.port, { name: opts.name, txtRecord: txt })
