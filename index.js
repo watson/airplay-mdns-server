@@ -7,7 +7,6 @@ var debug = require('debug')(pkg.name)
 
 // required options:
 // - name
-// - version (not required if txt is given)
 // - port
 //
 // optional options:
@@ -39,13 +38,12 @@ module.exports = function (opts, cb) {
   function generateTxt (mac) {
     var features = opts.features || module.exports.normalFeatures
     var featureMask = generateFeatureMask(features)
-    var model = opts.name + opts.version.split('.').slice(0, -1).join(',')
 
     return {
       deviceid: mac.toUpperCase(), // MAC address
       features: featureMask,       // supported features
-      model: model,                // device model
-      srcvers: opts.version        // server version
+      model: 'AppleTV2,1',         // device model
+      srcvers: '130.14'            // server version
     }
   }
 }
