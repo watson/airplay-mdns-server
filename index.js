@@ -88,4 +88,4 @@ module.exports.allFeatures = Object.keys(module.exports.features)
     return module.exports.features[a] | module.exports.features[b]
   })
 
-module.exports.normalFeatures = parseInt('11100111110111', 2)
+module.exports.normalFeatures = parseInt('11100111110111', 2) // 14839 / 0x39f7
